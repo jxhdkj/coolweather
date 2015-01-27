@@ -99,9 +99,9 @@ public class ChooseAreaActivity extends Activity {
 					queryCounties();
 				} else if (currentLevel == LEVEL_COUNTY) {
 					String countyCode = countyList.get(index).getCountyCode();
-//					Intent intent = new Intent(ChooseAreaActivity.this, WeatherActivity.class);
-//					intent.putExtra("county_code", countyCode);
-//					startActivity(intent);
+					Intent intent = new Intent(ChooseAreaActivity.this, WeatherActivity.class);
+					intent.putExtra("county_code", countyCode);
+					startActivity(intent);
 					finish();
 				}
 			}
